@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     # 単数にすると、そのコントローラーのidはリクエストに含まれなくなる
     resources :post_comments, only: [:create, :destroy]
   end
-  resources :users, only: [:show]
+  resources :users, only: [:show, :edit, :update]
 end
